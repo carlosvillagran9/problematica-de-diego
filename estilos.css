@@ -1,0 +1,174 @@
+body {
+    background-image: url(./fondo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+.contenedor_general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+/*contenedor 1*/
+.con1 {
+    display: flex;
+    flex-direction: column;
+    padding:0px 0px 50px 0px;
+}
+/*proceso*/
+.contenedor_proceso {
+    display: flex;
+    flex-direction: row;
+    margin:0px 0px 50px 0px;
+    height: 50px;
+}
+.palabra_proceso {
+    padding-right: 10px;
+}
+/*tamaño*/
+.palabra_tamano {
+    padding-right: 10px;
+}
+.contenedor_tamano {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+/*contenedor 2*/
+.con2 {
+    display: flex;
+    flex-direction: column;
+    padding:0px 0px 50px 0px;    
+}
+.numero_de_procesos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 90px;/*distancia del boton y numero de procesos*/
+}
+.palabra_num_procesos {
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.casilla_de_numeros_procesos {
+    border:10px groove blue;
+    padding: 5px;
+    width: 40px;
+    height: 55px;
+    margin-left: 35px;
+}
+#boton_iniciar {
+    width: 120px;
+    height: 80px;
+    
+}
+#boton_reiniciar {
+    margin-top: 90px;/*distancia del boton de reiniciar y numero de procesos*/ 
+    width: 120px;
+    height: 80px;   
+}
+/*terminar proceso*/
+.palbra_y_boton {
+    display: flex;
+    flex-direction: column;
+}
+.palabra_terminar_proceso {
+    margin-top: 75px;
+}
+#boton_terminar_proceso {
+    width: 120px;
+    height: 80px;
+    margin-top: 10px;
+}
+#selec_proceso_para_terminar {
+    margin-top: 100px;
+    margin-left: 8px;
+    width: 80px;
+}
+.reinicio_contennedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+.terminar_proceso {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/*contenedor 3*/
+.lista_procesos_activos {
+    border: 5px solid rgb(124, 124, 124);
+    border-radius: 10px;
+    background-color: #c7c7c7;
+    margin: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+li {
+    border-radius: 5px;
+    margin: 10px;
+}
+/*modificacion de procesos activos*/
+.procesos_activos_a1 {
+    color: #c7c7c7;
+}
+.procesos_activos_a2 {
+    color: #c7c7c7;
+}
+.procesos_activos_a3 {
+    color: #c7c7c7;
+}
+.procesos_activos_a4 {
+    color: #c7c7c7;
+}
+.procesos_activos_a5 {
+    color: #c7c7c7;
+}
+.lista_procesos_en_espera {
+    border: 5px solid rgb(124, 124, 124);
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #c7c7c7;
+    margin: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none; /*modifica para que las listas no aparezcan con el punto enfrente*/
+}
+/*modificacion de procesos activos*/
+.procesos_en_espera_a1 {
+    color: #c7c7c7;
+}
+.procesos_en_espera_a2 {
+    color: #c7c7c7;
+}
+.procesos_en_espera_a3 {
+    color: #c7c7c7;
+}
+.procesos_en_espera_a4 {
+    color: #c7c7c7;
+}
+.procesos_en_espera_a5 {
+    color: #c7c7c7;
+}
+/*contenedor 4*/
+.numeracion_paginas {
+    display: flex;
+    flex-direction: row;
+}
+h6 {
+    margin-top: 5px;
+}
+.numeracion_paginas button{
+    background-color: #c7c7c7;
+    border: 2px solid black;
+}
+/*contenedor 5*/
+.casilla_de_paginas_ocupadas {
+    border:10px groove blue;
+    padding: 5px;
+    width: 40px;
+    height: 55px;
+    margin-left: 35px;
+}

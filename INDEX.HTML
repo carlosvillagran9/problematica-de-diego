@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesos por Paginacion</title>
+    <link rel="stylesheet" href="material_bootstra_5/bootstrap_5.css">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    
+    <div class="contenedor_general">
+<!--contenedor 1-->
+        <div class="con1">
+            <!--proceso-->
+            <div class="contenedor_proceso">
+                <h4 class="palabra_proceso">Proceso</h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <select name="proceso" class="form-select" aria-label="Default select example" id="selec_proceso">
+                    <option value=""> </option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="A3">A3</option>
+                    <option value="A4">A4</option>
+                    <option value="A5">A5</option>
+                </select>
+            </div>
+            <!--tamaño-->
+            <div class="contenedor_tamano">
+                <h4 class="palabra_tamano">Tamano</h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <select name="tamano" class="form-select" aria-label="Default select example" id="selec_tamano">
+                    <option value=""> </option>
+                    <option value="64">64</option>
+                    <option value="128">128</option>
+                    <option value="256">256</option>
+                    <option value="512">512</option>
+                    <option value="1024">1024</option>
+                </select>
+            </div>
+        </div>
+<!--contenedor 2-->
+        <div class="con2">
+            <!--boton inicio-->
+            <button type="button" class="btn btn-success" id="boton_iniciar">Iniciar Proceso</button>
+            <div class="numero_de_procesos">
+                <h4 class="palabra_num_procesos">Numero de <br> Procesos</h4>
+                <h5 class="casilla_de_numeros_procesos">0</h5>
+            </div>
+            <div class="reinicio_contennedor">
+                <!--boton reinicio-->
+                <button type="button" class="btn btn-danger" id="boton_reiniciar">Reiniciar Procesos</button>
+            </div>
+            <!--terminar procesos-->
+            <div class="terminar_proceso">
+
+                <div class="palbra_y_boton">
+                    <h5 class="palabra_terminar_proceso">Terminar Proceso</h5>
+                    <button type="button" class="btn btn-danger" id="boton_terminar_proceso">Terminar</button>
+                </div> 
+
+                <select name="proceso" class="form-select" aria-label="Default select example" id="selec_proceso_para_terminar">
+                    <option value=""> </option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="A3">A3</option>
+                    <option value="A4">A4</option>
+                    <option value="A5">A5</option>
+                </select>
+            </div>
+        </div>
+<!--contenedor 3-->
+        <div class="con3">
+            <h5>Procesos activos</h5>
+            <br>
+            <br>
+            <br>
+            <ul class="lista_procesos_activos">
+                <li class="procesos_activos_a1"></li>
+                <li class="procesos_activos_a2"></li>
+                <li class="procesos_activos_a3"></li>
+                <li class="procesos_activos_a4"></li>
+                <li class="procesos_activos_a5"></li>
+                <li> </li> <!--espacio extra para acomodar-->
+            </ul><br>
+            <br>
+            <br>
+            <br>
+            <h5>Procesos en Espera</h5>
+            <br>
+            <br>
+            <br>
+            <ul class="lista_procesos_en_espera">
+                <li class="procesos_en_espera_a1"></li>
+                <li class="procesos_en_espera_a2"></li>
+                <li class="procesos_en_espera_a3"></li>
+                <li class="procesos_en_espera_a4"></li>
+                <li class="procesos_en_espera_a5"></li>
+                <li> </li> <!--espacio extra para acomodar-->
+            </ul>
+        </div>
+<!--contenedor 4-->
+        <div class="con4">
+            <div class="paginas_y_numeracion">
+                <h5 style="display: flex; justify-content: center; margin-bottom: 50px;">Marco de Paginación</h5>
+                <div class="numeracion_paginas">
+                    <h6 >128</h6>
+                    <button type="button" id="pagina_1" class="btn secondary" style="width: 300px; margin-left: 10px;"></button> <!--style="width: 300px; margin-left: 10px;"      es para que se alargen sin modificar la numeracion de la izquierda-->
+                </div>
+                <div class="numeracion_paginas">
+                    <h6 >128</h6>
+                    <button type="button" id="pagina_2" class="btn dark " style="width: 300px; margin-left: 10px;"></button>
+                </div>
+                <div class="numeracion_paginas">
+                    <h6 >128</h6>
+                    <button type="button" id="pagina_3" class="btn secondary " style="width: 300px; margin-left: 10px;"></button>
+                </div>
+                <div class="numeracion_paginas">
+                    <h6 >128</h6>
+                    <button type="button" id="pagina_4" class="btn dark " style="width: 300px; margin-left: 10px;"></button>
+                </div>
+                <div class="numeracion_paginas">
+                    <h6 >128</h6>
+                    <button type="button" id="pagina_5" class="btn secondary " style="width: 300px; margin-left: 10px;"></button>
+                </div>
+                <div class="numeracion_paginas">
+                    <h6 >128</h6>
+                    <button type="button" id="pagina_6" class="btn dark " style="width: 300px; margin-left: 10px;"></button>
+                </div>
+                <div class="numeracion_paginas">
+                    <h6 >128</h6>
+                    <button type="button" id="pagina_7" class="btn secondary " style="width: 300px; margin-left: 10px;"></button>
+                </div>
+                <div class="numeracion_paginas">
+                    <h6 >128</h6>
+                    <button type="button" id="pagina_8" class="btn dark " style="width: 300px; margin-left: 10px;"></button>
+                </div>
+                <div class="numeracion_paginas">
+                    <h6 >128</h6>
+                    <button type="button" id="pagina_9" class="btn secondary " style="width: 300px; margin-left: 10px;"></button>
+                </div>
+                <h5 class="alerta_sin_espacio" style="display: flex; justify-content: center; margin-top: 100px; border: 3px solid red; border-radius:10px; padding: 4px; width: 180px; margin-left: 80px; cursor: pointer;">Sin Espacio</h5>
+            </div>
+        </div>
+<!--contenedor 5-->
+        <div class="con5" style="margin-top: 200px;">
+            <h4 class="palabra_paginas_ocupadas" >Paginas <br> Ocupadas</h4>
+            <h5 class="casilla_de_paginas_ocupadas">0</h5>
+        </div>
+    </div>
+
+
+    <script src="./jQueryv3_7_1.js"></script>
+    <script src="./material_bootstra_5/bootstrap_5_1.js"></script>
+    <script src="./material_bootstra_5/bootstrap_5_2.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
